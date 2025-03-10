@@ -22,14 +22,14 @@ p {
 /* TRANSITION */
 
 a,
- .btn {
+.btn {
     transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
 
 nav,
- .nav-links {
+.nav-links {
     display: flex;
 }
 
@@ -216,9 +216,13 @@ section {
 /* BUTTONS */
 
 .btn-container {
+    margin-top: auto;
+    /* Pushes buttons to the bottom */
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    /* Centers buttons horizontally */
+    gap: 10px;
+    /* Adds space between buttons */
 }
 
 .btn {
@@ -279,7 +283,8 @@ section {
     flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
     display: flex;
 }
 
@@ -301,6 +306,10 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+
+    /* ✅ Ensure it grows & fills space */
+    display: flex;
+    flex-direction: column;
 }
 
 .section-container {
@@ -378,6 +387,8 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    margin-top: auto;
+    /* Pushes buttons to the bottom */
 }
 
 /* CONTACT */
