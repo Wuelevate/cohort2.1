@@ -32,7 +32,7 @@ const id = Symbol('uniqueId');
 // if-else
 if (age >= 60) {
     console.log("You are a senior citizen.");
-} else if (age >= 18) {
+} else if (year >= 18) {
     console.log("You are an adult.");
 } else {
     console.log("You are a minor.");
@@ -85,9 +85,10 @@ console.log(greet("Alice"));
 console.log(greet("Bob"));
 
 // Arrow function
-const greet = (name) => `Hello, ${name}!`;   // ES6
+const greet = (name) => `Hello, ${name}!`;
 console.log(greet("Alice"));
 console.log(greet("Bob"));
 
 
 
+// Why do programmers prefer dark mode? Because light attracts bugs!
