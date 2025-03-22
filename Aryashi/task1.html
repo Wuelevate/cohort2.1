@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fb;
+            
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 20px 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65341;
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images-container img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body  style="background-image: url('back.png');">
+    <div class="container">
+        <header>
+            <h1>Join Our Free Online Course</h1>
+        </header>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Course Selection:</label>
+                <select id="course" name="course">
+                    <option value="web-dev">Web Development</option>
+                    <option value="graphic-design">Graphic Design</option>
+                    <option value="data-science">Data Science</option>
+                </select>
+
+                <label for="message">Why are you interested in this course?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+        <div class="images-container">
+            <img src="OIP (1).jpg" alt="Course Image 1">
+            <img src="Master.jpg" alt=" Image 2">
+            <img src="img.jpg" alt="Course Image 3">
+        </div>
+    </div>
+</body>
+</html>
