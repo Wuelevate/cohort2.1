@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#3acfb1 (Teal);
+    color: #16a085 (rgb(50, 177, 177));
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #bdc3c7 (Light Gray);
+}
+
+header {
+    background-color: teal;
+    padding: 20px 0;
+    color:black;
+}
+
+header .title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #16a085;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
