@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial ', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
@@ -12,17 +12,21 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
 }
 
 .container {
   width: 100%;
   max-width: 400px;
-  background: rgb(255, 255, 255);
+  background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2 {
@@ -40,10 +44,15 @@ h2 {
   padding: 10px;
   margin-bottom: 15px;
   transition: 0.3s;
+  border: 1px solid transparent;
 }
 
 .input-group:hover {
   background: #e0e0e0;
+}
+
+.input-group:focus-within {
+  border-color: #667eea;
 }
 
 .input-group .icon {
@@ -66,11 +75,9 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Centers content */
   gap: 10px;
   margin: 10px 0;
   width: 100%;
-  /* Ensures full width */
 }
 
 .checkbox-group label {
@@ -82,11 +89,11 @@ textarea {
 .checkbox-group input[type="checkbox"] {
   width: 16px;
   height: 16px;
-  accent-color: #007bff;
+  accent-color: #667eea;
 }
 
-
-/* Buttons */
+/* Buttons - Common Style */
+.form-btn,
 .submit-btn {
   width: 100%;
   background: #667eea;
@@ -97,8 +104,72 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 10px;
 }
 
+.form-btn:hover,
 .submit-btn:hover {
-  background: #0825b6;
+  background: #4a56c6;
+}
+
+/* Password Field */
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.icon {
+  margin-right: 10px;
+  color: gray;
+}
+
+.password-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.eye-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  font-size: 18px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  /* Ensure correct stacking */
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: -14px;
+  /* Pull it closer to the input */
+  line-height: 1;
+  /* Reduce extra spacing */
+  display: block;
+  position: relative;
+  /* Keep it within normal flow */
+}
+
+.input-group input[type="date"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  color: #333;
+  cursor: pointer;
 }
