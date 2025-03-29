@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CRUD with Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 600px; margin: auto; }
+        input, button { margin: 5px; padding: 8px; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 5px 0; padding: 5px; border: 1px solid #ddd; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>API CRUD Operations</h2>
+        <input type="text" id="searchInput" placeholder="Search by name">
+        <br>
+        <input type="text" id="nameInput" placeholder="Object Name">
+        <input type="text" id="colorInput" placeholder="Color">
+        <input type="text" id="capacityInput" placeholder="Capacity">
+        <button onclick="addObject()"> Add Object</button>
+        <ul id="objectList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
