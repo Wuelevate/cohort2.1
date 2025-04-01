@@ -1,0 +1,39 @@
+/* Styling for Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #282c34;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.1);
+}
+
+.nav-button:active {
+  background-color: #1b87d0;
+  transform: scale(1);
+}
+
+/* Styling for Page Content */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+  font-size: 28px;
+}
